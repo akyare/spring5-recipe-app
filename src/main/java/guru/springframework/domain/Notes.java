@@ -2,9 +2,6 @@ package guru.springframework.domain;
 
 import javax.persistence.*;
 
-/**
- * Created by jt on 6/13/17.
- */
 @Entity
 public class Notes {
 
@@ -41,4 +38,6 @@ public class Notes {
     public void setRecipeNotes(String recipeNotes) {
         this.recipeNotes = recipeNotes;
     }
+
+
 }
