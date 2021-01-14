@@ -1,17 +1,13 @@
 package guru.springframework.domain;
 
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.Data;
 
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
 //@Data does not work because of the @EqualsAndHashCode
-@Getter
-@Setter
-@ToString
+@Data
 @Entity
 public class Recipe {
 

@@ -1,17 +1,13 @@
 package guru.springframework.domain;
 
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
 import javax.persistence.*;
 import java.util.Set;
 
 //@Data does not work because of the @EqualsAndHashCode
-@Getter
-@Setter
-@ToString
+@Data
+@EqualsAndHashCode(exclude = {"recipes"})
 @Entity
 public class Category {
 
